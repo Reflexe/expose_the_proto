@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+import "google/protobuf/descriptor.proto";
+package expose;
+extend google.protobuf.MessageOptions {
+  bool table = 51234;
+}
+
+extend google.protobuf.FieldOptions {
+  bool id = 51232;
+  string references = 51233;
+}
+
